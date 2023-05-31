@@ -38,3 +38,13 @@ And need to use the @Document to create the document. this is same like we using
         private final MyRepository myRepository;
         private final AnotherDependency anotherDependency;
     }
+
+If we needed we can use the model to sent in the response of the REST APIS, but that is not a good practise
+we should use DTO to do that. Because Model classes should not expose to the outside. 
+
+    dto
+      ProductResponse
+    model
+      Product
+
+In this case we don't send the Product as the response, instead of that we sending the ProductResponse dto.
