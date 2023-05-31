@@ -1,5 +1,7 @@
 @Builder - using to convert a model to builder pattern
 
+@Slf4j - slf4j logs
+
 we can provide the response entity as follows
 1. Can keep the return type as void
 2. @ResponseStatus(HttpStatus.CREATED)
